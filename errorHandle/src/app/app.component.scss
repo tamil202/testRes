@@ -1,0 +1,48 @@
+.loading {
+    animation:  load 2s linear infinite;
+}
+
+@keyframes load{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* file-upload.component.css */
+label {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #cbd5e1;
+    /* Dashed border for upload area */
+    background-color: #f9fafb;
+    /* Light background color */
+    transition: background-color 0.3s;
+}
+
+label:hover {
+    background-color: #e5e7eb;
+    /* Slightly darker on hover */
+}
+
+input {
+    display: none;
+    /* Hides the default file input */
+}
+
+img {
+    border-radius: 50%;
+    /* Rounded image */
+    object-fit: cover;
+    /* Ensure image covers the area */
+}
+
+span {
+    color: #9ca3af;
+    /* Light gray color for placeholder text */
+    text-align: center;
+}
